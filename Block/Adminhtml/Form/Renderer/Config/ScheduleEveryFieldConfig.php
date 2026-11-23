@@ -32,6 +32,8 @@ class ScheduleEveryFieldConfig extends Field
     }
 
     /**
+     * Render the schedule interval and unit fields.
+     *
      * @param AbstractElement $element
      * @return string
      */

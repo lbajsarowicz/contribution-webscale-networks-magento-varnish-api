@@ -32,6 +32,8 @@ class ScheduleEveryFieldComment extends AbstractBlock implements CommentInterfac
     }
 
     /**
+     * Return the cron expression comment.
+     *
      * @param string $elementValue
      * @return string
      */
