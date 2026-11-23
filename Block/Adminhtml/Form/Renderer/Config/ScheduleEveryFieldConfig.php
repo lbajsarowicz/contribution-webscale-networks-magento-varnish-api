@@ -13,6 +13,15 @@ use Magento\Framework\Data\Form\Element\Select;
 
 class ScheduleEveryFieldConfig extends Field
 {
+    /**
+     * @var Select
+     */
+    public $select;
+
+    /**
+     * @param Context $context
+     * @param Select $select
+     */
     public function __construct(
         Context $context,
         Select $select
@@ -26,7 +35,8 @@ class ScheduleEveryFieldConfig extends Field
      * @param AbstractElement $element
      * @return string
      */
-    protected function _getElementHtml(AbstractElement $element) {
+    protected function _getElementHtml(AbstractElement $element)
+    {
         $name = $element->getName();
 
         $element->setStyle('width: 100px; margin-right: 20px;')->setName($name . '[]');

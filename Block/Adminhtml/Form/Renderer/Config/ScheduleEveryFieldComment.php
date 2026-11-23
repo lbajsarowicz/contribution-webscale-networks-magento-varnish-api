@@ -14,8 +14,12 @@ use Webscale\Varnish\Helper\Config;
 class ScheduleEveryFieldComment extends AbstractBlock implements CommentInterface
 {
     /**
+     * @var Config
+     */
+    public $config;
+
+    /**
      * @param Context $context
-     * @param array $data
      * @param Config $config
      */
     public function __construct(
@@ -28,7 +32,7 @@ class ScheduleEveryFieldComment extends AbstractBlock implements CommentInterfac
     }
 
     /**
-     * @param $elementValue
+     * @param string $elementValue
      * @return string
      */
     public function getCommentText($elementValue)
